@@ -1,0 +1,42 @@
+.go-back {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(145, 0, 0, 0.733);
+  color: white;
+  font-weight: bolder;
+  padding: .5rem 1.5rem;
+  display: inline-block;
+  transition: background-color .2s;
+  margin: 1rem;
+}
+
+.go-back:hover { background-color: rgba(145, 0, 0, 0.425); }
+
+.champ {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: .5rem 0;
+}
+
+p {
+  max-width: 500px;
+}
+
+span {
+  font-weight: bolder;
+}

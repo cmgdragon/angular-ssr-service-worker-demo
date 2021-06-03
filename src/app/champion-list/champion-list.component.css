@@ -1,0 +1,22 @@
+h2 {
+  margin: 2rem;
+}
+
+.champ-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.champ {
+  border: 1px solid rgba(49, 49, 49, 0.842);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 1rem;
+  transition: background-color .4s;
+}
+
+.champ:hover {
+  background-color: rgba(49, 58, 182, 0.438);
+}

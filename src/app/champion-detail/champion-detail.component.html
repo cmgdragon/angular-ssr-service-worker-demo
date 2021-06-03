@@ -1,0 +1,21 @@
+<div class="go-back" routerLink="/"> < Go back</div>
+<div *ngIf="!champion" class="champ">Loading...</div>
+<div *ngIf="champion" class="champ">
+  <img [src]="getChampImage(champion.id)" [alt]="champion.name+' image'" />
+  <div class="champ-info">
+    <ul>
+      <li><span>Name:</span> {{champion.name}}</li>
+      <li><span>Title:</span> {{champion.title}}</li>
+      <li><span>Role:</span> <ul>
+        <li *ngFor="let role of champion.tags; let i = index">{{role}}</li>
+      </ul></li>
+      <li><span>Stats:</span> <ul>
+        <li><span>Attack: </span>{{champion.info.attack}}</li>
+        <li><span>Defense: </span>{{champion.info.defense}}</li>
+        <li><span>Difficulty: </span>{{champion.info.difficulty}}</li>
+        <li><span>Magic: </span>{{champion.info.magic}}</li>
+      </ul></li>
+      <li><p>{{champion.lore}}</p></li>
+    </ul>
+  </div>
+</div>

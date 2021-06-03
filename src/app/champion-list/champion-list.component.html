@@ -1,0 +1,6 @@
+<h2>LOL – Lista de campeones</h2>
+<div class="champ-list">
+  <div class="champ" *ngFor="let champ of champions; let i = index" [routerLink]="['/champion', champ.id]">
+    {{champ.name}}
+  </div>
+</div>
